@@ -1,29 +1,29 @@
-// // Higher order functions are a type of functions which expects other functions as a parameter
+// Higher order functions are a type of functions which expects other functions as a parameter
 
-// function h(x, func){
-//     // h -> is a HOF
-//     // func -> call back
-//     console.log(x*x)
-//     func(x*x)
-// }
+function h(x, func){
+    // h -> is a HOF
+    // func -> call back
+    console.log(x*x)
+    func(x*x)
+}
 
-// h(12, exec)
+h(12, exec)
 
-// function exec(n){
-//     console.log("The squared value is: ", n)
-// }
+function exec(n){
+    console.log("The squared value is: ", n)
+}
 
 
 
 //  CONCEPT OF SETTIMEOUT (This is not an inbuilt method in js. Browser supports this feature or any runtime environment like node js)
 
-// console.log("start")
+console.log("start")
 
-// setTimeout(function f(){  // setTimeout is a HOF as it takes a function as parameter
-//     console.log("Timer done")
-// }, 3000)
+setTimeout(function f(){  // setTimeout is a HOF as it takes a function as parameter
+    console.log("Timer done")
+}, 3000)
 
-// console.log("end")
+console.log("end")
 
 
 
