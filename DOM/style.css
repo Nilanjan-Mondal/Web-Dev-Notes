@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+h1 {
+    text-align: center;
+}
+
+#todoInput{
+    width: 75%;
+    padding: 10px;
+    margin-right: 10px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+}
+
+#addTodo {
+    padding: 10px 2px;
+    border: none;
+    border-radius: 4px;
+    background-color: #5cabff;
+    width: 80px;
+    cursor: pointer;
+}
+
+.container {
+    background-color: white;
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    padding: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0px;
+}
+
+li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+li:hover {
+    background-color: aliceblue;
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+.filterBtn, .editBtn, .deleteBtn, .completeBtn {
+    /* margin-top: 10px;
+    margin-right: 10px; */
+    margin: 5px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(231, 231, 89);
+    transition: background-color 0.3s;
+}
+
+.filterBtn:hover {
+    cursor: pointer;
+    background-color: #5cabff;
+}
+
+.editBtn {
+    background-color: #ffd700;
+    cursor: pointer;
+}
+
+.deleteBtn {
+    background-color: #ff6347;
+    cursor: pointer;
+}
+
+
+.completeBtn {
+    background-color: #32cd32;
+    cursor: pointer;
+}
+
+
+.newTodo {
+    letter-spacing: 1px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
